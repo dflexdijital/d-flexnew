@@ -65,11 +65,49 @@ body {
 
 .how-section-card-wrapper {
   border-radius: 50px;
-  width: 500px;
+  max-width: 500px;
   border: 1px solid gray;
 }
 .how-section-card-wrapper .how-section-card-number {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+.wp-btn-wrapper-fixed {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .wp-btn-wrapper-fixed a svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+.wp-btn-wrapper-fixed::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.568);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: balon1 1s infinite;
+}
+@keyframes balon1 {
+  from {
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+  }
+  to {
+    width: 110%;
+    height: 110%;
+    opacity: 0;
+  }
+}
+
+.how-section-card-arrow img {
+  width: 110px;
 }/*# sourceMappingURL=style.css.map */

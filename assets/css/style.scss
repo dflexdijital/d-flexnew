@@ -57,7 +57,7 @@ body{
 
 .how-section-card-wrapper{
    border-radius: 50px;
- width: 500px;
+ max-width: 500px;
  border: 1px solid gray;
 
 
@@ -69,4 +69,53 @@ body{
     .how-section-card-content{
      
     }
+}
+
+.wp-btn-wrapper-fixed{
+    position: relative;
+    a{
+        svg{
+            @media (min-width:768px) {
+                width: 70px;
+                height: 70px;
+          
+                
+            }
+        }
+    }
+
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.568);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        z-index: -1;
+        animation: balon1 1s infinite;
+       
+        @keyframes balon1 {
+            from{
+                width: 50%;
+                height: 50%;
+               opacity: 1;
+            }
+            to{
+                width: 110%;
+                height: 110%;
+               opacity: 0;
+            }
+            
+        }
+    }
+}
+
+.how-section-card-arrow{
+  
+  img{
+   width: 110px;
+  }
 }
