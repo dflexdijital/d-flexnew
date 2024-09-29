@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", system-ui !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #b8b8b8; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.font-mont{
+    font-family: "Montserrat", system-ui !important;  
+}
+body{
+    background-image: url('../img/2560x1600.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fw-custom-bolder{
+    font-weight: 600 !important;
+}
+#logo{
+    width: 150px;
+}
+
+.btn-green{
+    background-color: #F7B432;
+}
+.btn-border{
+    border: 2px solid #F7B432;
+}
+.green-filter{
+    filter: brightness(0) saturate(100%) invert(87%) sepia(38%) saturate(4112%) hue-rotate(336deg) brightness(107%) contrast(94%) !important;
+}
+
+.h-dvh100{
+    height: 100dvh;
+}
+.z-11{
+    z-index: -5;
+}
+
+.how-section-card-wrapper{
+   border-radius: 50px;
+ width: 500px;
+ border: 1px solid gray;
+
+
+    .how-section-card-number{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .how-section-card-content{
+     
+    }
+}
