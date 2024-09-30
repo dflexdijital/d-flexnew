@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: "Montserrat", system-ui !important;
@@ -30,6 +37,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+   
 }
 .fw-custom-bolder{
     font-weight: 600 !important;
@@ -45,7 +53,8 @@ body{
     border: 2px solid #F7B432;
 }
 .green-filter{
-    filter: brightness(0) saturate(100%) invert(87%) sepia(38%) saturate(4112%) hue-rotate(336deg) brightness(107%) contrast(94%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(87%) sepia(38%) saturate(4112%) hue-rotate(336deg) brightness(107%) contrast(94%) !important;
+            filter: brightness(0) saturate(100%) invert(87%) sepia(38%) saturate(4112%) hue-rotate(336deg) brightness(107%) contrast(94%) !important;
 }
 
 .h-dvh100{
@@ -61,7 +70,9 @@ body{
 
  background: rgba(255, 255, 255, 0.21);
 
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(.6px);
 -webkit-backdrop-filter: blur(.6px);
 
@@ -71,9 +82,7 @@ backdrop-filter: blur(.6px);
         height: 50px;
         border-radius: 50%;
     }
-    .how-section-card-content{
-     
-    }
+
 }
 
 .wp-btn-wrapper-fixed{
@@ -98,10 +107,27 @@ backdrop-filter: blur(.6px);
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
         border-radius: 50%;
         z-index: -1;
-        animation: balon1 1s infinite;
+        -webkit-animation: balon1 1s infinite;
+                animation: balon1 1s infinite;
+       
+        @-webkit-keyframes balon1 {
+            from{
+                width: 50%;
+                height: 50%;
+               opacity: 1;
+            }
+            to{
+                width: 110%;
+                height: 110%;
+               opacity: 0;
+            }
+            
+        }
        
         @keyframes balon1 {
             from{
@@ -130,7 +156,10 @@ backdrop-filter: blur(.6px);
 .header-end-btn,.hero-btn-wrapper{
     a{
      &:hover{
-     box-shadow:1px 1px 10px white;
+     -webkit-box-shadow:1px 1px 10px white;
+             box-shadow:1px 1px 10px white;
+     -webkit-transition: all .2s;
+     -o-transition: all .2s;
      transition: all .2s;
    
      }
