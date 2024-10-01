@@ -37,8 +37,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: purple;
    
 }
+.fs-7{
+    font-size:0.8rem;
+    
+}
+
 .fw-custom-bolder{
     font-weight: 600 !important;
 }
@@ -48,6 +54,9 @@ body{
 
 .btn-green{
     background-color: #F7B432;
+}
+.green-color{
+   color: #F7B432; 
 }
 .btn-border{
     border: 2px solid #F7B432;
@@ -163,5 +172,61 @@ backdrop-filter: blur(.6px);
      transition: all .2s;
    
      }
+    }
+}
+
+footer{
+
+background-color:#441d9eab;
+  border-top: 1px solid grey;
+.footer-logo{
+    img{
+        width: 120px;
+    }
+}
+.footer-box-content{
+    a{
+        transition: 0.1s all;
+        position: relative;
+        overflow-x: hidden;
+        padding-bottom: 4px;
+       &:hover{
+        &::after{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: gainsboro;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateX(-110%);
+            animation: arrow 0.7s forwards ease-out;
+            
+            @keyframes arrow{
+            from{
+                transform: translateX(-110%); 
+            } 
+               to{
+                transform: translateX(0%); 
+               } 
+            }
+          
+        }
+    } 
+    }
+}
+}
+
+
+.footer-bottom-info-end-wrapper{
+    .social-icon{
+        background-color:#6537cf;
+        border-radius: 5px;
+        transition: all 0.2s;
+        height: 25px;
+        width: 25px;
+        &:hover{
+            background-color:#2d038f;  
+        }
     }
 }
