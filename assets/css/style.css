@@ -95,9 +95,7 @@ img {
 }
 @media (max-width: 768px) {
   .banner-card-end-item {
-    opacity: 0.2;
-    right: -10%;
-    width: 100%;
+    display: none;
   }
 }
 
