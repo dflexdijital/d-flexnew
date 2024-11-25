@@ -103,7 +103,6 @@ img {
 
 .banner-card-start-item {
   position: relative;
-  transform: translatey(-150%);
   transition: all 1.2s;
 }
 @media (min-width: 768px) {
@@ -112,16 +111,12 @@ img {
   }
 }
 
-.mySwiper .swiper-slide-active .banner-card-start-item {
-  transform: translatey(-5%);
-}
-
 .banner-bg-item {
   z-index: -10;
 }
 
 .banner-bg-item-100 {
-  top: 40px;
+  top: 30px;
   right: 30%;
 }
 @media (max-width: 768px) {
