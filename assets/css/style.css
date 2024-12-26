@@ -23,7 +23,7 @@
 
 .poppins-regular {
   font-family: "Poppins", serif;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-style: normal;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .bg-color-061323 {
-  background-color: #061323;
+  background-color: #061323 !important;
 }
 
 .bg-color-081f39 {
@@ -139,16 +139,13 @@
   z-index: 1000;
 }
 
-.navbar-brand {
-  /*
-    img{
-        width: 70%;
-        @media (min-width:768px) 
-        {
-        width: 85%;    
-        }
-    }
-        */
+.navbar-brand img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .navbar-brand img {
+    width: 85%;
+  }
 }
 
 header {
@@ -227,6 +224,10 @@ ul li .content-icon svg {
 }
 
 .color-bg-FFF7F2 {
-  background-color: #fff4ed;
-  border: 1px solid #FF5D00;
+  background-color: #f2edff;
+  border: 1px solid #ffa300;
+}
+
+.wp-btn-wrapper {
+  z-index: 5000;
 }/*# sourceMappingURL=style.css.map */
